@@ -1,15 +1,14 @@
 package com.example.VacationPayCalculator.service;
 
 import com.example.VacationPayCalculator.model.DataForCalculation;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import org.springframework.beans.factory.annotation.Autowired;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class CalculatorServiceTest {
-    private static CalculatorService service = new CalculatorService();
+    private final static CalculatorService service = new CalculatorService();
 
     @ParameterizedTest
     @CsvSource({"10000, 5, 50000",
@@ -18,11 +17,10 @@ class CalculatorServiceTest {
             "1000, 0, 0",
             "0, 0, 0",
             "1.7976931348623157E308, 1, 1.7976931348623157E308",
-            "1.7976931348623157E308, 2, Infinity",
-
+            "1.7976931348623157E308, 2, Infinity"
     })
-    void testCalculate(double avgSalary, int amountOfDays, double result) {
-        assertEquals(result, service.calculate(new DataForCalculation(avgSalary, amountOfDays)));
+    void testCalculate(double avgSalary, int amountOfDays, double expected) {
+        assertEquals(expected, service.calculate(new DataForCalculation(avgSalary, amountOfDays)));
     }
 
     @ParameterizedTest
