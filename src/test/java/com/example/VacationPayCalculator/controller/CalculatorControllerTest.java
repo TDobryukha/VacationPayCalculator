@@ -25,7 +25,18 @@ public class CalculatorControllerTest {
             "/calculate?amountOfDays=100, BAD_REQUEST",
             "/calculate?avgSalary=-1&amountOfDays=5, BAD_REQUEST",
             "/calculate?avgSalary=0&amountOfDays=5, BAD_REQUEST",
-
+            "/calculate?amountOfDays=100&beginDate=26.04.2023&endDate=02.05.2023, BAD_REQUEST",
+            "/calculate?avgSalary=10000&amountOfDays=100&beginDate=26.04.2023&endDate=02.05.2023, OK",
+            "/calculate?avgSalary=10000&beginDate=26.04.2023&endDate=02.05.2023, OK",
+            "/calculate?avgSalary=10000&endDate=02.05.2023, BAD_REQUEST",
+            "/calculate?avgSalary=10000&beginDate=26.04.2023, BAD_REQUEST",
+            "/calculate?avgSalary=10000&amountOfDays=100&beginDate=26.04.2023, OK",
+            "/calculate?avgSalary=10000&amountOfDays=100&endDate=02.05.2023, OK",
+            "/calculate, BAD_REQUEST",
+            "/calculate?avgSalary=&amountOfDays=100,BAD_REQUEST",
+            "/calculate?avgSalary=&amountOfDays=100,BAD_REQUEST",
+            "/calculate?avgSalary=1000&amountOfDays=, BAD_REQUEST",
+            "/calculate?avgSalary=1000&beginDate=&endDate=, BAD_REQUEST"
     })
     public void Test(String url, HttpStatus statusExpected) {
         ResponseEntity<String> response = testRestTemplate.getForEntity(url, null, String.class);
