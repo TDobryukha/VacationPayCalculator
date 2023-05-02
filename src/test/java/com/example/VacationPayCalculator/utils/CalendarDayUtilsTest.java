@@ -1,4 +1,4 @@
-package com.example.VacationPayCalculator;
+package com.example.VacationPayCalculator.utils;
 
 import com.example.VacationPayCalculator.model.CalendarDay;
 import org.junit.jupiter.params.ParameterizedTest;
