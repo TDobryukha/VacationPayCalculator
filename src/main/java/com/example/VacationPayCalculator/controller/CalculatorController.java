@@ -2,6 +2,8 @@ package com.example.VacationPayCalculator.controller;
 
 import com.example.VacationPayCalculator.model.DataForCalculation;
 import com.example.VacationPayCalculator.service.CalculatorService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,7 +19,11 @@ public class CalculatorController {
     }
 
     @GetMapping("calculate")
-    public double calculate(@Valid @ModelAttribute DataForCalculation data) {
-        return service.calculate(data);
+    public ResponseEntity<String> calculate(@Valid @ModelAttribute DataForCalculation data) {
+        try {
+            return new ResponseEntity<>(String.format("%.2f", service.calculate(data)), HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
     }
 }

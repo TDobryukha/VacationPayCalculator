@@ -1,0 +1,158 @@
+   [
+    {
+      "holiday": false,
+      "date": "20220305"
+    },
+    {
+      "holiday": true,
+      "date": "20220307"
+    },
+    {
+      "holiday": true,
+      "date": "20220308"
+    },
+    {
+      "holiday": true,
+      "date": "20230425"
+    },
+    {
+      "holiday": true,
+      "date": "20240514"
+    },
+    {
+      "holiday": true,
+      "date": "20230101"
+    },
+    {
+      "holiday": true,
+      "date": "20230102"
+    },
+    {
+      "holiday": true,
+      "date": "20230103"
+    },
+    {
+      "holiday": true,
+      "date": "20230104"
+    },
+    {
+      "holiday": true,
+      "date": "20230105"
+    },
+    {
+      "holiday": true,
+      "date": "20230106"
+    },
+    {
+      "holiday": true,
+      "date": "20230107"
+    },
+    {
+      "holiday": true,
+      "date": "20230108"
+    },
+    {
+      "holiday": true,
+      "date": "20230223"
+    },
+    {
+      "holiday": true,
+      "date": "20230224"
+    },
+    {
+      "holiday": true,
+      "date": "20230308"
+    },
+    {
+      "holiday": true,
+      "date": "20230501"
+    },
+    {
+      "holiday": true,
+      "date": "20230508"
+    },
+    {
+      "holiday": true,
+      "date": "20230509"
+    },
+    {
+      "holiday": true,
+      "date": "20230612"
+    },
+    {
+      "holiday": true,
+      "date": "20231104"
+    },
+    {
+      "holiday": true,
+      "date": "20231106"
+    },
+    {
+      "holiday": true,
+      "date": "20240101"
+    },
+    {
+      "holiday": true,
+      "date": "20240102"
+    },
+    {
+      "holiday": true,
+      "date": "20240103"
+    },
+    {
+      "holiday": true,
+      "date": "20240104"
+    },
+    {
+      "holiday": true,
+      "date": "20240105"
+    },
+    {
+      "holiday": true,
+      "date": "20240106"
+    },
+    {
+      "holiday": true,
+      "date": "20240107"
+    },
+    {
+      "holiday": true,
+      "date": "20240108"
+    },
+    {
+      "holiday": true,
+      "date": "20240223"
+    },
+    {
+      "holiday": true,
+      "date": "20240308"
+    },
+    {
+      "holiday": true,
+      "date": "20240501"
+    },
+    {
+      "holiday": true,
+      "date": "20240502"
+    },
+    {
+      "holiday": true,
+      "date": "20240503"
+    },
+    {
+      "holiday": true,
+      "date": "20240509"
+    },
+    {
+      "holiday": true,
+      "date": "20240510"
+    },
+    {
+      "holiday": true,
+      "date": "20240612"
+    },
+    {
+      "holiday": true,
+      "date": "20241104"
+    }
+]

@@ -1,22 +1,23 @@
 package com.example.VacationPayCalculator.model;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
 import javax.validation.constraints.Max;
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Positive;
+import java.time.LocalDate;
 
+@RequiredArgsConstructor
 @AllArgsConstructor
 @Data
+@Builder
 public class DataForCalculation {
     @Positive
-    double avgSalary;
-    @Positive
+    private double avgSalary;
     @Max(365)
-    int amountOfDays;
-    //@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd.MM.yy")
-    //@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "[HH:mm][H:mm]")
+    private int amountOfDays;
+    private LocalDate beginDate;
+    private LocalDate endDate;
 }
