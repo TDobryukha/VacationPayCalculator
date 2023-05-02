@@ -1,5 +1,6 @@
-package com.example.VacationPayCalculator;
+package com.example.VacationPayCalculator.utils;
 
+import com.example.VacationPayCalculator.VacationPayCalculatorApplication;
 import com.example.VacationPayCalculator.model.CalendarDay;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;

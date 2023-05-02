@@ -32,8 +32,10 @@ public class CalculatorService {
                 data.setAmountOfDays(defineWorkingDays(data.getBeginDate(), data.getEndDate()));
             }
         }
-        if (data.getAmountOfDays() <= 0 || data.getAvgSalary() <= 0) {
-            throw new IllegalArgumentException("Average salary and amount of vacation days must be positive");
+        if (data.getAmountOfDays() <= 0) {
+            throw new IllegalArgumentException("Amount of vacation days must be positive");
+        } else if (data.getAvgSalary() <= 0) {
+            throw new IllegalArgumentException("Average salary must be positive");
         }
     }
 

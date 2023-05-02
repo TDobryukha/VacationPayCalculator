@@ -1,6 +1,6 @@
 package com.example.VacationPayCalculator.confuguration;
 
-import com.example.VacationPayCalculator.CalendarDayUtils;
+import com.example.VacationPayCalculator.utils.CalendarDayUtils;
 import com.example.VacationPayCalculator.model.CalendarDay;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

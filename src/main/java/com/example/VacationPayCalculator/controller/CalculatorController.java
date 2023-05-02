@@ -19,11 +19,7 @@ public class CalculatorController {
     }
 
     @GetMapping("calculate")
-    public ResponseEntity<String> calculate(@Valid @ModelAttribute DataForCalculation data) {
-        try {
-            return new ResponseEntity<>(String.format("%.2f", service.calculate(data)), HttpStatus.OK);
-        } catch (Exception e) {
-            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
-        }
+    public ResponseEntity<String> calculate(@Valid @ModelAttribute DataForCalculation data) throws IllegalArgumentException {
+        return new ResponseEntity<>(String.format("%.2f", service.calculate(data)), HttpStatus.OK);
     }
 }
